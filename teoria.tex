@@ -1,0 +1,36 @@
+\documentclass{article}
+\usepackage[utf8]{inputenc}
+\usepackage{graphicx} % Required for inserting images
+\usepackage{hyperref}
+\usepackage{bbold}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{enumerate}
+\usepackage{geometry}
+\usepackage{inputenc}
+\usepackage{mathtools}
+\usepackage{listings}
+\usepackage{footnote}
+\title{Meccanica Statistica}
+\author{Chiara Baldelli}
+\date{Settembre-Dicembre 2024}
+
+\begin{document}
+
+\maketitle
+
+\section{Introduzione}
+La nostra percezione del mondo si ferma al livello macroscopico, eppure siamo consapevoli dell'esistenza di una realtà microscopica composta da atomi e molecole alla base della materia. L'approccio meccanico Newtoniano risulta tuttavia insufficiente per studiare quetso tipo di sistemi pochè in 1 mole di gas è presente un numero di atomi dell'ordine di $10^23$ che rende computazionalmente impossibile scrivere per ognuno degli atomi l'equazione del moto e risolverla risalendo alla dinamica del sistema. Inoltre, ammesso e non concesso che si riesca a fare un'analisi di questo tipo, la dinamica risulta caotica cioè estremamente sensibile alle condizioni iniziali che sono sempre soggette a un errore: anche in questo caso non si riesce a descrivere l'evoluzione di un simile sistema. Un primo approccio allo studio dei gas è stata la termodinamica classica, una teoria fisica che si basa sullo studio di proprietà macroscopiche dei gas (temperatura, pressione, volume) e che riesce a descrivere il loro comportamento attraverso una singola equazione detta "equazione di stato". Nel caso molto particolare di gas perfetto l'equazione di stato assume una forma particolarmente semplice:
+\begin{equation*}
+    PV=Nk_BT
+\end{equation*}
+Il grande limite della termodinamica è che essa non spiega davvero cosa succede a livello microscopico, si limita a fornire una descrizione macroscopica dei fenomeni senza entrare nel dettaglio. Per questo motivo nasce l'esigenza di creare una nuova teoria, sviluppata a cavallo tra il 1800 e il 1900 da menti come Einstein, Gibbs e Boltzmann. Questo nuovo approccio, che prenderà il nome di meccanica statistica, si basa su una descrizione statistica e probabilistica del comportamento di un sistema, in linea con le nostre esigenze di conoscere le quantità macroscopiche di esso. Per una trattazione di questo tipo è necessario dare dei fondamenti di teoria della probabilità e delle distribuzioni statistiche, utilizzando un approccio probabilistico assiomatico.
+\section{Teoria della probabilità e delle distribuzioni}
+Ricordiamo velocemente gli assiomi della probabilità. Sia $P(A)$ la probabilità che un determinato evento si verifichi. Allora essa deve soddisfare 4 assiomi fondamentali, basati su proprietà "ragionevoli":
+\begin{enumerate}
+    \item $P(A)\geq 0$, cioè la probabilità è sempre un numero positivo
+    \item $\sum_i P(A_i)=1$, cioè  se considero tutti i possibili eventi uno di essi deve accadere e quindi la somma delle probabilità è 1
+    \item $P(A\vee B)=P(A)+P(B)$, cioè la probabilità che avvengano due eventi indipendenti è la somma delle probabilità dei singoli eventi
+    \item La probabilità che si verifichino due eventi dipendenti è il prodotto delle probabilità dei singoli eventi, cioè $P(A \wedge B=P(A)P(B)$
+\end{enumerate}
+\end{document}
